@@ -128,7 +128,7 @@ jobs:
 
           # Call OpenAI
           RESPONSE=$(curl -s https://api.openai.com/v1/chat/completions \
-            -H "Authorization: Bearer *** \
+            -H "Authorization: Bearer $OPENAI_API_KEY" \
             -H "Content-Type: application/json" \
             -d @/tmp/review-prompt-final.json)
 
